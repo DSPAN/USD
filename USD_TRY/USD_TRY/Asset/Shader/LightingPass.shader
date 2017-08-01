@@ -1,0 +1,1 @@
+{"vertex":"LightingPass.vs","fragment":"LightingPass.frag"}

@@ -1,0 +1,9 @@
+{
+"objs":
+[
+	{
+		"mesh":"Plane_0.mesh",
+		"mat":"Plane.mat"
+	}
+]
+}

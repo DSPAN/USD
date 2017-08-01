@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D2D0DA5A-B4C1-4285-88EF-4A1C1C9D8D5B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opengl\glm;F:\opengl\glm\test\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opengl\glm;F:\opengl\glm\test\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opengl\glm;F:\opengl\glm\test\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opengl\glm;F:\opengl\glm\test\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\opengl\glm\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/opengl/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/opengl/glm -BF:/opengl/glm --check-stamp-file F:\opengl\glm\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/opengl/glm/CMakeLists.txt;F:\opengl\glm\CMakeLists.txt;F:\opengl\glm\CMakeFiles\3.2.3\CMakeSystem.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCCompiler.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\opengl\glm\cmake\GNUInstallDirs.cmake;F:\opengl\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\opengl\glm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/opengl/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/opengl/glm -BF:/opengl/glm --check-stamp-file F:\opengl\glm\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/opengl/glm/CMakeLists.txt;F:\opengl\glm\CMakeLists.txt;F:\opengl\glm\CMakeFiles\3.2.3\CMakeSystem.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCCompiler.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\opengl\glm\cmake\GNUInstallDirs.cmake;F:\opengl\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\opengl\glm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/opengl/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/opengl/glm -BF:/opengl/glm --check-stamp-file F:\opengl\glm\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/opengl/glm/CMakeLists.txt;F:\opengl\glm\CMakeLists.txt;F:\opengl\glm\CMakeFiles\3.2.3\CMakeSystem.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCCompiler.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\opengl\glm\cmake\GNUInstallDirs.cmake;F:\opengl\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\opengl\glm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/opengl/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/opengl/glm -BF:/opengl/glm --check-stamp-file F:\opengl\glm\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/opengl/glm/CMakeLists.txt;F:\opengl\glm\CMakeLists.txt;F:\opengl\glm\CMakeFiles\3.2.3\CMakeSystem.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCCompiler.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeCXXCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\opengl\glm\CMakeFiles\3.2.3\CMakeRCCompiler.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;F:\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;F:\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;F:\opengl\glm\cmake\GNUInstallDirs.cmake;F:\opengl\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\opengl\glm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/opengl/glm/ZERO_CHECK.vcxproj">
+      <Project>B4EBE5B3-2E94-4201-896F-E1A893D3B85A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/glm/glm_dummy.vcxproj">
+      <Project>0E380AD5-3500-41D6-B06C-147DD7938441</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_common.vcxproj">
+      <Project>10AC1664-32AF-4247-9445-464457571A95</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_exponential.vcxproj">
+      <Project>442DF7D2-C4FF-4898-B303-F310E180BE8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_geometric.vcxproj">
+      <Project>5FA7D406-7A39-4254-8351-DC5DC443B462</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_integer.vcxproj">
+      <Project>B294563B-B66B-40A5-BC6C-452EED0C225C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_integer_bit_count.vcxproj">
+      <Project>67FB4423-F485-4C64-A115-CF43110E67DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_integer_find_lsb.vcxproj">
+      <Project>7BF15A6E-2792-44BA-B27F-62D0FB4250C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_integer_find_msb.vcxproj">
+      <Project>890FCBCD-4975-4FDD-B4B3-BEE59B7CF6ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_matrix.vcxproj">
+      <Project>973F46D0-5DD7-4270-91F5-54C374AE8648</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_noise.vcxproj">
+      <Project>BC653F83-1C52-42A3-B372-B53CF39A8B58</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_packing.vcxproj">
+      <Project>99F62425-0F90-444C-B61F-1F806DC3A19F</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_swizzle.vcxproj">
+      <Project>548D2273-7DD3-4109-9A4E-554D09154449</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_trigonometric.vcxproj">
+      <Project>18F4535D-E617-4D5B-8B38-6287A7689CB2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_func_vector_relational.vcxproj">
+      <Project>D099156F-24CA-421F-97B1-E2E0C603DF1A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_setup_force_cxx98.vcxproj">
+      <Project>C634ABC9-E889-47A3-B3C1-1BBCB1B37284</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_setup_message.vcxproj">
+      <Project>0DE14EAB-A1D4-4239-AF20-5079B2364DA2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_setup_precision.vcxproj">
+      <Project>5F9AC1CA-4AEA-4F62-836D-AD2DDE8CCCE2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_cast.vcxproj">
+      <Project>66E94B16-2AB7-433C-9FFC-3467167D0123</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_float.vcxproj">
+      <Project>E4D3CA25-DEC4-4579-ACC1-8BD2E5D9D51F</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_int.vcxproj">
+      <Project>A1337569-B637-44A6-AD85-F8F68D4496BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_length.vcxproj">
+      <Project>0BA12938-86EB-46F2-B3F3-3CAEA9AD23D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_length_size.vcxproj">
+      <Project>6577A6F7-2C7E-4BAA-BC2B-1A0120CA9AD4</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat2x2.vcxproj">
+      <Project>F3D41E34-BB1D-4DEC-8A97-25A620D884CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat2x3.vcxproj">
+      <Project>DCE07F5D-E4BA-4B1E-8527-CAA744209965</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat2x4.vcxproj">
+      <Project>9993F9A7-D988-4BC2-976A-01F247C2E19A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat3x2.vcxproj">
+      <Project>A782326A-E6BA-4D50-AC18-5E5E5F88CB5B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat3x3.vcxproj">
+      <Project>690447DC-4855-41A6-95F5-80ADACBA7366</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat3x4.vcxproj">
+      <Project>9A0E9AE3-88E1-43C9-8F02-6589D614CE06</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat4x2.vcxproj">
+      <Project>1BAB8C49-E5E9-4671-904A-2AF92A5D9378</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat4x3.vcxproj">
+      <Project>390891CD-F3F2-4C59-8681-1A1C3EFAD632</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_mat4x4.vcxproj">
+      <Project>786D6F30-DE10-4402-A692-3669E8A27530</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_vec1.vcxproj">
+      <Project>48B622F9-9212-4F4C-96A6-408D6DC2EB26</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_vec2.vcxproj">
+      <Project>1AE9F60C-5B5B-4E5B-9B3B-8E80C43C3861</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_vec3.vcxproj">
+      <Project>9772D526-316C-4598-B26F-A4B4AB148F95</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/core/test-core_type_vec4.vcxproj">
+      <Project>E0143B91-6D12-47D1-AFE8-5095981505D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_bitfield.vcxproj">
+      <Project>980E3D72-D540-4573-849F-E90EEDE11697</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_constants.vcxproj">
+      <Project>02EEC40C-7496-4530-826C-B7DB716062B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_epsilon.vcxproj">
+      <Project>293A6910-D30E-4DFE-88D7-4A76E54E6785</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_integer.vcxproj">
+      <Project>770F3F76-310C-4735-BDA8-66098BD94EC2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_matrix_access.vcxproj">
+      <Project>564EA974-1C37-45D0-AD46-9F899781F783</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_matrix_integer.vcxproj">
+      <Project>42FB2969-D5D2-4B6D-840A-D0178816ED89</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_matrix_inverse.vcxproj">
+      <Project>8DB70427-B6F6-41DC-8A4F-7377B1F5C277</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_matrix_transform.vcxproj">
+      <Project>8C63DFE9-F492-4E2F-B961-9FE93D6E34BC</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_noise.vcxproj">
+      <Project>706D9684-DEB7-4F94-84DB-426255120A54</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_packing.vcxproj">
+      <Project>EF02C451-BBC0-4879-A220-CD87433CAB08</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_quaternion.vcxproj">
+      <Project>E0B07408-9E1E-4C8F-9531-C1EADC3DBCB3</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_random.vcxproj">
+      <Project>DCD93F79-D1AD-4D24-AF27-DAF887B8542E</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_reciprocal.vcxproj">
+      <Project>73CAF4CF-EC46-4ABA-A067-6CEB63F46A45</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_round.vcxproj">
+      <Project>A4391CAC-D178-46F5-B39D-9C4BBB98BD8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_type_precision.vcxproj">
+      <Project>0ED1E111-8A32-49DD-B960-F766F893B6B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_type_ptr.vcxproj">
+      <Project>F9E74C8A-3C7B-4E27-9715-E0F62CBE7A90</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_ulp.vcxproj">
+      <Project>F3B78E54-6696-408A-945E-CAD6367981B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtc/test-gtc_vec1.vcxproj">
+      <Project>5F1835E1-EECB-49F0-8809-AE02325CEB8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_associated_min_max.vcxproj">
+      <Project>D15008BE-CD38-48BB-9B3B-6DC32503D031</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_closest_point.vcxproj">
+      <Project>D4AE4B3E-1E0D-440B-A497-2440415184DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_color_space.vcxproj">
+      <Project>0C0F45FD-BF4C-466D-9D1A-613F389BE923</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_color_space_YCoCg.vcxproj">
+      <Project>A1A1786B-E4AF-40F2-AF76-DF5ADFB1AD9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_common.vcxproj">
+      <Project>064403A6-951B-484A-93E1-DE1F363C9CD4</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_compatibility.vcxproj">
+      <Project>ED08E25D-7D3D-41BB-9A14-511E896FADEB</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_component_wise.vcxproj">
+      <Project>ACDE2D8C-499F-49A7-B4AB-002446E6F819</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_dual_quaternion.vcxproj">
+      <Project>C82AE7BD-2FF6-4DE2-97B1-2BB01EB15EBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_euler_angle.vcxproj">
+      <Project>4710F917-FC70-45F7-B3D4-6CEC0831CDBE</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_extend.vcxproj">
+      <Project>AC859433-F830-4E50-B698-13BE0FBE7695</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_extented_min_max.vcxproj">
+      <Project>92882F21-F41C-4E99-B4F3-81C3EF93A9AA</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_fast_exponential.vcxproj">
+      <Project>EC8A09B3-A45E-48B2-B4E7-A1C7170372A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_fast_square_root.vcxproj">
+      <Project>2BCA9AFA-A839-4751-9038-6D671EFFC7F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_fast_trigonometry.vcxproj">
+      <Project>FB8063A3-4A34-4AD7-A027-F790AE629613</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_gradient_paint.vcxproj">
+      <Project>9443D2C5-E4E3-44DE-A1D5-392862C27529</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_handed_coordinate_space.vcxproj">
+      <Project>3B0120B7-F613-4377-BCB6-495EE0A93F6B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_integer.vcxproj">
+      <Project>C7E4C546-CACF-4054-9BAE-4AF09A0D56F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_intersect.vcxproj">
+      <Project>59B27099-2093-40C4-97D2-3EEF34F74C8D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_io.vcxproj">
+      <Project>C21A370C-51B9-41CF-8EAF-2B96F872E57B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_log_base.vcxproj">
+      <Project>83EDC49A-CBD0-4377-9916-540CBCA139DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_cross_product.vcxproj">
+      <Project>FC21B720-BB17-4E78-95C7-7CFB4ADD8086</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_decompose.vcxproj">
+      <Project>829BE9F9-E655-40A5-B6F2-BBE50465CD38</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_interpolation.vcxproj">
+      <Project>4BED98CE-4EDC-461E-B50E-C33559F7B45C</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_major_storage.vcxproj">
+      <Project>AA661661-01A2-4030-8D2B-AA55A8689823</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_operation.vcxproj">
+      <Project>911C9D25-642B-44A9-BC0D-0434CC0DA3BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_query.vcxproj">
+      <Project>535FF11C-1B37-45D9-BCFD-C32635B0B87B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_matrix_transform_2d.vcxproj">
+      <Project>7086B5C4-781D-49BD-8D4F-7E9CA7CE5467</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_multiple.vcxproj">
+      <Project>6E9294FD-486A-444B-B3C5-0ECCD4F01EFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_norm.vcxproj">
+      <Project>73C24BB0-74F5-4A21-AECA-5967C4EE8543</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_normal.vcxproj">
+      <Project>5C441D99-FDA7-4FEB-98ED-04B1B12506F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_normalize_dot.vcxproj">
+      <Project>B5D75185-7D06-4550-97E3-D91564FCBF1A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_number_precision.vcxproj">
+      <Project>A6BE1860-1C4B-4089-A6D4-68DE52FA7399</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_optimum_pow.vcxproj">
+      <Project>01B44A44-02B1-4E14-86D6-68DF8B16E7BC</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_orthonormalize.vcxproj">
+      <Project>670F8B3D-02A5-47E8-9238-AF17B7AF1AF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_perpendicular.vcxproj">
+      <Project>69A81370-E099-4F46-A50A-E22069A1D49D</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_polar_coordinates.vcxproj">
+      <Project>F01D4124-9744-430D-87B4-162E6E697E48</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_projection.vcxproj">
+      <Project>CF03F484-0602-414D-BA7E-146A15A1E6DB</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_quaternion.vcxproj">
+      <Project>C7F95B5D-6F0F-444A-BB60-CC5F31FD1B34</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_range.vcxproj">
+      <Project>CB8950CD-D893-4F33-9382-7EF6D5A56448</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_rotate_normalized_axis.vcxproj">
+      <Project>446C81C8-9897-48D5-A4FE-DBDFC229A05A</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_rotate_vector.vcxproj">
+      <Project>6BB97429-4341-40CA-A463-0515EB0A03F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_scalar_multiplication.vcxproj">
+      <Project>BF3830A7-E507-48B1-8E5D-AB29C77F8CE7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_scalar_relational.vcxproj">
+      <Project>8298AA94-39EF-4F85-82DE-EACA1F74970B</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_simd_mat4.vcxproj">
+      <Project>1EDAF2B4-1155-4E19-8291-BE59B9B80115</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_simd_vec4.vcxproj">
+      <Project>FFC8825A-CB57-483B-9909-106247548CA3</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_spline.vcxproj">
+      <Project>70319AB6-D2AC-483E-B754-81462D3C2AFD</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_string_cast.vcxproj">
+      <Project>52C11560-86E5-479B-B5BF-FA3BFCBE1BE7</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_type_aligned.vcxproj">
+      <Project>A37F3C72-F807-4DE3-8B0F-DA2B0D435197</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_vector_angle.vcxproj">
+      <Project>41606AE7-F5E8-4B29-A28C-4C5B69345BB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/opengl/glm/test/gtx/test-gtx_vector_query.vcxproj">
+      <Project>5936317B-7EC9-4F1C-B355-64EAE3E76B88</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/8/1 星期二 上午 12:48:50。
+     1>项目“F:\NEW_TEST\USD_TRY\USD_TRY\USD_TRY.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\VS2012\VC\bin\CL.exe /c /I"F:\NEW_TEST\RJ\rapidjson-master\include" /IF:\NEW_TEST\USD_TRY\USD_TRY /IF:\NEW_TEST\USD_TRY\GL /IF:\NEW_TEST\USD_TRY\glm\glm /IF:\NEW_TEST\FreeImage\Dist\x32 /I"F:\GL\glfw-3.2.1.bin.WIN32\include\GLFW" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Res\Shader.cpp h\main.cpp
+         Shader.cpp
+         正在生成代码...
+         正在编译...
+         main.cpp
+     1>f:\new_test\usd_try\usd_try\mesh.h(64): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\vs2012\vc\include\stdio.h(218) : 参见“fopen”的声明
+     1>f:\new_test\usd_try\usd_try\cubemap.h(178): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\new_test\usd_try\usd_try\renderlayer.h(144): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\new_test\usd_try\usd_try\scene.h(28): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\new_test\usd_try\usd_try\scene.h(40): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+       Link:
+         E:\VS2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\NEW_TEST\USD_TRY\Debug\USD_TRY.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\NEW_TEST\USD_TRY\glutx86 /LIBPATH:"F:\GL\glfw-3.2.1.bin.WIN32\lib-vc2012" /LIBPATH:F:\NEW_TEST\FreeImage\Dist\x32 glew32.lib glut32.lib OpenGL32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\NEW_TEST\USD_TRY\Debug\USD_TRY.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\NEW_TEST\USD_TRY\Debug\USD_TRY.lib" /MACHINE:X86 Debug\Camera.obj
+         Debug\Fileutil.obj
+         Debug\main.obj
+         Debug\Math.obj
+         Debug\Prefab.obj
+         Debug\Shader.obj
+         USD_TRY.vcxproj -> F:\NEW_TEST\USD_TRY\Debug\USD_TRY.exe
+     1>已完成生成项目“F:\NEW_TEST\USD_TRY\USD_TRY\USD_TRY.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.77

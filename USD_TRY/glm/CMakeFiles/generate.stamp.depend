@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+F:/opengl/glm/CMakeLists.txt
+F:/opengl/glm/CMakeFiles/3.2.3/CMakeSystem.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake
+F:/opengl/glm/CMakeFiles/3.2.3/CMakeCCompiler.cmake
+F:/opengl/glm/CMakeFiles/3.2.3/CMakeCXXCompiler.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeGenericSystem.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/Windows.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/WindowsPaths.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeCInformation.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-C.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+F:/opengl/glm/CMakeFiles/3.2.3/CMakeRCCompiler.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeRCInformation.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeCXXInformation.cmake
+F:/CMake/share/cmake-3.2/Modules/Compiler/MSVC-CXX.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-CXX.cmake
+F:/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+F:/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+F:/opengl/glm/cmake/GNUInstallDirs.cmake
