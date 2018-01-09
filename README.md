@@ -1,2 +1,2 @@
 # USD
-C++ Renderer
+C++ 
